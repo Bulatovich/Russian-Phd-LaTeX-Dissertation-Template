@@ -37,3 +37,14 @@
 # INDENT_FILES += $(wildcard Dissertation/part4/*.tex)
 # INDENT_FILES += Synopsis/content.tex
 # INDENT_FILES += Presentation/prescontent.tex
+# # Компилятор
+LATEX = xelatex
+
+# Просмотрщик
+VIEWER = zathura
+
+# Количество прогонов (для TOC, ссылок, библиографии)
+LATEX_RUNS = 3
+
+# Не подавлять вывод (вы предпочитаете видеть лог)
+LATEX_FLAGS = -file-line-error -halt-on-error
